@@ -1,0 +1,8 @@
+freebsd_instance:
+  image_family: freebsd-13-0
+
+task:
+  setup_script: |
+    pkg install -y go
+  test_script: |
+    go test -exec sudo -race -v ./...
