@@ -1,0 +1,7 @@
+freebsd_instance:
+  image_family: freebsd-13-0
+
+task:
+  script: |
+    uname -a
+    env
